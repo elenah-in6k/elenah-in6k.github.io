@@ -1,262 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/jquery.jcarousel-core.js"></script>
-    <script src="js/jquery.jcarousel-pagination.js"></script>
-    <script src="js/jcarousel-control.js"></script>
-    <title>
-        Document
-    </title>
-</head>
-<body>
-<div class="carousel-bgr"></div>
-<div class="container">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logoHeader.png"/>
-                    <img class="brand" src="images/polo360.png"/>
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="app/styles/main.css">
+    <link rel="stylesheet" href="app/assets/bootstrap/css/bootstrap.css"/>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="clientApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-                    <div class="brand-title">
-                        MY KIND OF BUSINESS BLOG
-                    </div>
-                </a>
-            </div>
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">
-                            <img class=".break-tab" src="images/break_header.png"/>
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
 
-                            <div class="tab">
-                                <div>
-                                    HOME
-                                </div>
-                                <div class="tab-title">
-                                    Back to home
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class=".break-tab" src="images/break_header.png"/>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-                            <div class="tab">
-                                <div>
-                                    PRODUCTS
-                                </div>
-                                <div class="tab-title">
-                                    What we have for you
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class=".break-tab" src="images/break_header.png"/>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
-                            <div class="tab">
-                                <div>
-                                    SERVICES
-                                </div>
-                                <div class="tab-title">
-                                    Things we do
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class=".break-tab" src="images/break_header.png"/>
-
-                            <div class="tab">
-                                <div>
-                                    BLOG
-                                </div>
-                                <div class="tab-title">
-                                    Follow our updates
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class=".break-tab" src="images/break_header.png"/>
-
-                            <div class="tab">
-                                <div>
-                                    CONTACT
-                                </div>
-                                <div class="tab-title">
-                                    Ways to reach us
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="carousel">
-        <div class="jcarousel">
-            <ul>
-                <li><img src="images/carousel/slide-img/img1.png"></li>
-                <li><img src="images/carousel/slide-img/img4.png"></li>
-                <li><img src="images/carousel/slide-img/img5.png"></li>
-                <li><img src="images/carousel/slide-img/img6.png"></li>
-                <li><img src="images/carousel/slide-img/img9.png"></li>
-                <li><img src="images/carousel/slide-img/img13.png"></li>
-                <li><img src="images/carousel/slide-img/img16.png"></li>
-
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">AtlasJ</a></li>
+              <li><a ng-href="#/muscles">Мышцы</a></li>
+              <li><a ng-href="#/skeleton">Скелет</a></li>
+              <li><a ng-href="#/joints">Суставы</a></li>
+              <li><a ng-href="#/tissue">Ткани</a></li>
+              <li><a ng-href="#/systems">Системы</a></li>
             </ul>
+          </div>
         </div>
-        <p class="jcarousel-pagination"></p>
+      </div>
     </div>
-    <img src="images/carousel/shadow_under_carousel.png">
 
-    <div class="newsfeed">
-        <div class="feed-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-        <img class="break" src="images/break.png">
-
-        <div class="infoBlocks">
-            <div class="block col-xs-4">
-                <div class="title">Perfect Logic</div>
-                <div class="subtitle">All you want your website to do.</div>
-                <div class="shudow-img-news"></div>
-                <div class="img-frame">
-                    <img class="img" src="images/man.png">
-                </div>
-                <div class="text-area">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
-                </div>
-                <img class="btn" src="images/button/white_btn.png">
-
-                <div class="white-btn">
-                    Learn more
-                </div>
-            </div>
-            <div class="block middle-b col-xs-4">
-                <div class="title">Complete Solution</div>
-                <div class="subtitle">A tool anything and everything you can think</div>
-                <div class="shudow-img-news"></div>
-                <div class="img-frame">
-                    <img class="img" src="images/girl.png">
-                </div>
-                <div class="text-area">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciun tdolore magnam aliquam quaerat voluptatem.
-                </div>
-                <img class="btn" src="images/button/white_btn.png">
-
-                <div class="white-btn">
-                    Learn more
-                </div>
-            </div>
-            <div class="block col-xs-4">
-                <div class="title">Uber Culture</div>
-                <div class="subtitle">Fresh. Modern and ready for future</div>
-                <div class="shudow-img-news"></div>
-                <div class="img-frame">
-                    <img class="img" src="images/green-circle.png">
-                </div>
-                <div class="text-area">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </div>
-                <img class="btn" src="images/button/white_btn.png">
-
-                <div class="white-btn">
-                    Learn more
-                </div>
-            </div>
-        </div>
-
-        <img class="break" src="images/break.png">
-
-        <div class="contactBlocks">
-            <div class="block col-xs-4">
-                <div class="title">Social Connection</div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <div class="subtitle"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium
-                </div>
-                <div class="social-img-block">
-                    <img class="img-s" src="images/social/rss.png">
-                    <img class="img-s" src="images/social/facebook.png">
-                    <img class="img-s" src="images/social/in.png">
-                    <img class="img-s" src="images/social/youtube.png">
-                    <img class="img-s" src="images/social/twitter.png">
-                </div>
-                <div class="n-title">Newsletter</div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <div class="subtitle"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium
-                </div>
-
-                <input type="text" placeholder="your email address"></input>
-
-                <img class="btn" src="images/button/blue_btn.png">
-
-                <div class="blue-btn">
-                    Subscribe
-                </div>
-            </div>
-            <div class="block middle-b col-xs-4">
-                <div class="title">Contact</div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <input type="text" placeholder="your name"></input>
-                <input type="text" placeholder="your email address"></input>
-                <input class="area" type="text" placeholder="message"></input>
-
-                <img class="btn" src="images/button/blue_btn.png">
-
-                <div class="blue-btn">
-                    Send it
-                </div>
-            </div>
-            <div class="block col-xs-4">
-                <div class="title">News Updates</div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <div class="img-frame">
-                    <img class="img" src="images/news/firefox.png" alt="">
-                </div>
-                <div class="subtitle news-block"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                    incidunt distinctio, culpa reiciendis sint deleniti itaque sed quas ratione.
-                </div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <div class="img-frame">
-                    <img class="img" src="images/news/purple-bubles.png" alt="">
-                </div>
-                <div class="subtitle news-block"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                    incidunt distinctio, culpa reiciendis sint deleniti itaque sed quas ratione.
-                </div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <div class="img-frame">
-                    <img class="img" src="images/news/colour-line.png" alt="">
-                </div>
-                <div class="subtitle news-block"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                    incidunt distinctio, culpa reiciendis sint deleniti itaque sed quas ratione.
-                </div>
-                <div class="text-break"> -----------------------------------------------------------</div>
-                <img class="btn" src="images/button/blue_btn.png">
-
-                <div class="blue-btn">
-                    Visit our Blog
-                </div>
-            </div>
-        </div>
+    <div class="container">
+    <div ng-view=""></div>
     </div>
-</div>
 
-<div class="footer">
-</div>
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> © 2016 GaiAl </p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="app/scripts/app.js"></script>
+        <script src="app/scripts/controllers/main.js"></script>
+        <script src="app/scripts/controllers/about.js"></script>
+        <script src="app/scripts/controllers/body-systems-ctrl.js"></script>
+        <script src="app/scripts/factory/body-sysems-factory.js"></script>
+
+        <!-- endbuild -->
 </body>
 </html>
