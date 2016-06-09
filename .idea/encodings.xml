@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/views/muscles/foot.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/muscles/hand.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/muscles/neck.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/muscles/pelvis.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/muscles/torso.html" charset="UTF-8" />
+  </component>
+</project>
