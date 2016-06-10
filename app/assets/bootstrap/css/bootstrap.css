@@ -7880,6 +7880,7 @@ button.close.close-gallery {
     text-align: center;
   }
 
+
   .shedule95 {
     color: #fff;
     background-color: #173883;
@@ -7928,5 +7929,35 @@ area[title]:hover:after {
   top: 100%;
   white-space: nowrap;
   background-color:red;
+
+  .shedule95 {
+    color: #fff;
+    background-color: #173883;
+    border-color: #132f6d;
+  }
+
+  .shedule96 {
+    padding-bottom: 45px;
+    margin-right: 105px;
+    padding-top: 40px;
+
+  }
+
+  .shedule97 {
+    font-family: Aldine401BTWebBold;
+    font-size: 24px;
+    margin-left: 105px;
+  }
+
+  .shedule98 {
+    color: #fff;
+    background-color: #b92e2e;
+    border-color: #132f6d;
+  }
+
+  .shedule99 {
+    color: #ff0000;
+  }
+
 }
 
