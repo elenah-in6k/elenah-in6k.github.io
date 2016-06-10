@@ -25,6 +25,7 @@ angular.module('clientApp')
       }
       $scope.scorePersent = Math.round(($scope.score * 100)/questNumb);
       alert($scope.score + "/"+ questNumb + " правильних відповідей, це " + $scope.scorePersent + " % правильних відповідей")
+
     }
 
     function clearForm(name) {
