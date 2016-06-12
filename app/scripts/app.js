@@ -417,7 +417,7 @@ angular
       .when('/test/muscles', musclesTest)
       .when('/test/skeleton', skeletonTest)
       .when('/test/heard', heardTest)
-      .when('/test/result', {
+      .when('/test/', {
         templateUrl: 'app/views/tests/result.html',
         controller: 'TestCtrl'
       })
