@@ -67,7 +67,7 @@ box-shadow: none;
 }
 
 .btn:hover {
-  background-color: #00bebe;
+  background-color: #009f9f;
 }
 
 .login-link {
@@ -75,4 +75,12 @@ box-shadow: none;
   color: #444;
   display: block;
 	margin-top: 12px;
+}
+
+.margin5{
+  margin: 5px;
+}
+
+.btn:active{
+  background-color: #006363;
 }

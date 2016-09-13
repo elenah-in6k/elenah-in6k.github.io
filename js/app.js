@@ -17,8 +17,8 @@ angular.module("myApp", ["ngRoute"])
             .when("/music", {
                 templateUrl : "view/music.html"
             })
-            .when("/1", {
-                templateUrl : "view/sherlok.html"
+            .when("/tim", {
+                templateUrl : "view/tim.html"
             })
             .when("/1", {
                 templateUrl : "view/sherlok.html"
