@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Login Form</title>
 
-
-    <link rel="stylesheet" href="css/style.css">
-
-
-</head>
-
-<body>
-
-<body>
 <div class="login">
     <div class="login-screen">
         <div class="app-title">
@@ -21,22 +7,18 @@
 
         <div class="login-form">
             <div class="control-group">
-                <input type="text" class="login-field" value="" placeholder="username" id="login-name">
+                <input type="text" class="login-field"  placeholder="username" id="login-name" ng-model="username">
                 <label class="login-field-icon fui-user" for="login-name"></label>
             </div>
 
             <div class="control-group">
-                <input type="password" class="login-field" value="" placeholder="password" id="login-pass">
+                <input type="password" class="login-field"  placeholder="password" id="login-pass" ng-model="password">
                 <label class="login-field-icon fui-lock" for="login-pass"></label>
             </div>
 
-            <a class="btn btn-primary btn-large btn-block" href="#">login</a>
-            <a class="login-link" href="#">Lost your password?</a>
+            <a class="btn btn-primary btn-large btn-block" ng-click="login(username, password)" href="">login</a>
+
         </div>
     </div>
 </div>
-</body>
 
-
-</body>
-</html>
