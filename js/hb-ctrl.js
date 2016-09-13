@@ -6,8 +6,9 @@ angular.module('myApp')
         $rootScope.tim = "";
 
         $rootScope.login = function (username, password) {
-            if (username == "сируха" && password=="korona18")
-            alert("ok");
+            if (username == "сируха" && password=="korona18"){
+            console.log(window.location);
+               window.location.hash = "#/gosha";}
             else  if (username == "сируха" && password !="korona18")
                 alert("Не вірний пароль");
             else  if (username != "сируха" && password =="korona18")
@@ -45,5 +46,37 @@ angular.module('myApp')
         $rootScope.timHelp = function() {
             $rootScope.tim = "";
             $rootScope.tim1 = " Загугли і не позорь мене)))";
+        };
+
+        $rootScope.gosha = function(value) {
+            if (value == "pineapple")
+            window.location.hash  = "#/ballon";
+            else alert("Погано ти знаєш англійську аяяй ((")
+        };
+
+        $rootScope.ballon = function(value) {
+            if (value == 7)
+                window.location.hash  = "#/balk";
+            else alert("не вірно")
+        };
+        $rootScope.balk = function(value) {
+            if (value == "ананас")
+                window.location.hash  = "#/mmm";
+            else alert("уважно розгадуй")
+        };
+        $rootScope.mmm = function(value) {
+            if (value == "інжир")
+                window.location.hash  = "#/hist";
+            else alert("попробуй ще раз")
+        };
+        $rootScope.hist = function(value) {
+            if (value == "часи")
+                window.location.hash  = "#/sherlok";
+            else alert("попробуй ще раз")
+        };
+        $rootScope.sherlok = function(value) {
+            if (value == "2")
+                window.location.hash  = "#/music";
+            else alert("попробуй ще раз")
         };
 });

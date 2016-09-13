@@ -5,7 +5,7 @@ angular.module("myApp", ["ngRoute"])
             .when("/", {
                 templateUrl : "view/login.html"
             })
-            .when("/1", {
+            .when("/sherlok", {
                 templateUrl : "view/sherlok.html"
             })
             .when("/cart", {
@@ -20,17 +20,17 @@ angular.module("myApp", ["ngRoute"])
             .when("/tim", {
                 templateUrl : "view/tim.html"
             })
-            .when("/1", {
-                templateUrl : "view/sherlok.html"
+            .when("/gosha", {
+                templateUrl : "view/gosha.html"
             })
-            .when("/1", {
-                templateUrl : "view/sherlok.html"
+            .when("/balk", {
+                templateUrl : "view/balk.html"
             })
-            .when("/1", {
-                templateUrl : "view/sherlok.html"
+            .when("/hist", {
+                templateUrl : "view/hist.html"
             })
-            .when("/1", {
-                templateUrl : "view/sherlok.html"
+            .when("/mmm", {
+                templateUrl : "view/mmm.html"
             })
             .when("/1", {
                 templateUrl : "view/sherlok.html"
